@@ -1,0 +1,18 @@
+{
+    "game1": {
+        "name": "Arm Wrestle Simulator",
+        "icon": "https://tr.rbxcdn.com/0d02219212e78b824a7c51881917ef18/150/150/Image/Png"
+    },
+    "game2": {
+        "name": "Car Crushers 2",
+        "icon": "https://tr.rbxcdn.com/84242ea298b267d58b91e532853c0974/150/150/Image/Png"
+    },
+  "game3": {
+        "name": "Tower Of Hell",
+        "icon": "https://tr.rbxcdn.com/a2174f009a3a65c5b9950952a1364a51/512/512/Image/Png"
+    },
+  "game4": {
+        "name": "Blade Ball",
+        "icon": "https://tr.rbxcdn.com/3f2f95736e54db08fcbcf27d21f5f0aa/150/150/Image/Png"
+    }
+}

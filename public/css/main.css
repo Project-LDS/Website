@@ -1,0 +1,41 @@
+:root {
+    --black: #171319;
+    --gray: #332f35;
+    --dark-gray: rgb(24, 23, 26);
+    --purple: #aa00ff;
+    --hover-purple: #c042ff;
+    --red: #ff3f3f;
+    --hover-red: #ff6060;
+
+    --transition-time: 0.3s;
+}
+
+::selection {
+    background-color: var(--hover-purple);
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--gray);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka', sans-serif;
+}

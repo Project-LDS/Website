@@ -1,0 +1,164 @@
+.navbar {
+    background: linear-gradient(90deg, #180f1c 0%, #000 100%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    z-index: 9;
+    position: fixed;
+}
+
+.main-container {
+    padding-top: 12vh;
+}
+
+.navbar-brand a {
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 28pt;
+    transition: color var(--transition-time);
+}
+
+.navbar-brand a:hover {
+    color: #fff;
+}
+
+.navbar-nav {
+    background-color: var(--purple);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 45px;
+}
+
+.navbar-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15pt;
+    padding: 15px;
+    transition: font-size var(--transition-time);
+}
+
+.navbar-nav a:hover {
+    font-size: 18pt;
+}
+
+.navbar-discord {
+    background-color: var(--purple);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    text-decoration: none;
+    transition: background-color var(--transition-time);
+}
+
+.navbar-discord:hover {
+    background-color: var(--hover-purple);
+}
+
+.navbar-discord svg {
+    width: 25px;
+    height: 25px;
+}
+
+.navbar-discord path {
+    fill: #fff;
+}
+
+.navbar-discord span {
+    color: #fff;
+    font-size: 15pt;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    gap: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu svg {
+    width: 100%;
+    height: 100%;
+}
+
+.hamburger-menu path {
+    fill: #fff;
+}
+
+.navbar-elements {
+    background-color: var(--black);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: 3;
+    transition: transform var(--transition-time);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    list-style: none;
+    gap: 10px;
+}
+
+.navbar-nav-elements a {
+    color: #fff;
+    text-decoration: underline var(--purple);
+    font-size: 20pt;
+    transition: all var(--transition-time);
+}
+
+.navbar-nav-elements a:hover {
+    text-decoration: underline var(--hover-purple);
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-discord {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}

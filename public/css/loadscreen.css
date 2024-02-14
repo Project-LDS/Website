@@ -1,0 +1,49 @@
+.loadscreen {
+    background-color: var(--black);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    animation: fade-out 1.5s ease-in-out;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+.loadscreen::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 8px solid var(--gray);
+    border-top-color: var(--purple);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn)
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}

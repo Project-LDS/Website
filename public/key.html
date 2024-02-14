@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Key | LDS Home</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Roblox, LDS, Script, Exploit">
+    <meta name="description"
+        content="Selected scripts, in a way for you to have the best possible experience playing roblox.">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loadscreen.css">
+    <link rel="stylesheet" href="css/key.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="js/loadscreen.js"></script>
+    <script src="js/key-page.js" defer></script>
+    <script src="js/cookies.js"></script>
+</head>
+
+<body>
+    <div class="loadscreen" id="loadscreen"></div>
+    <header class="navbar" id="navbar">
+        <div class="navbar-back">
+            <a href="https://projectlds.online/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 24 24" version="1.1">
+                    <path
+                        d="M7.16075,10.9724 C8.44534,9.45943 10.3615,8.5 12.5,8.5 C16.366,8.5 19.5,11.634 19.5,15.5 C19.5,16.3284 20.1715,17 21,17 C21.8284,17 22.5,16.3284 22.5,15.5 C22.5,9.97715 18.0228,5.5 12.5,5.5 C9.55608,5.5 6.91086,6.77161 5.08155,8.79452 L4.73527,6.83068 C4.59142,6.01484 3.81343,5.47009 2.99759,5.61394 C2.18175,5.7578 1.637,6.53578 1.78085,7.35163 L2.82274,13.2605 C2.89182,13.6523 3.11371,14.0005 3.43959,14.2287 C3.84283,14.5111 4.37354,14.5736 4.82528,14.4305 L10.4693,13.4353 C11.2851,13.2915 11.8299,12.5135 11.686,11.6976 C11.5422,10.8818 10.7642,10.337 9.94833,10.4809 L7.16075,10.9724 Z">
+                    </path>
+                </svg>Back to home</a>
+        </div>
+    </header>
+    <main class="main-container" id="main-container">
+        <h1>You have received your key:</h1>
+        <span id="key"></span>
+        <button id="copyButton" type="button" onclick="copyKey()">Copy Key</button>
+        <p>It is not recommended to share your key to other people.<br>
+            Thank you for using LDS Hub!</p>
+    </main>
+    <div class="pop-up" id="pop-up">
+        <div class="title-container">
+            <h1>Get a key</h1>
+            <h2>Complete the actions to unlock</h2>
+            <span id="url-title"></span>
+            <span id="script-title"></span>
+        </div>
+        <div class="verify-container">
+            <button id="like-video" type="button">Like video</button>
+            <button id="subscribe-channel" type="button">Subcribe on
+                YouTube</button>
+            <h2 id="unlock-progress">unlock progress 0/2</h2>
+        </div>
+        <div class="buttons">
+            <button id="get-key" type="button" disabled>Unlock key</button>
+        </div>
+    </div>
+</body>
+
+</html>
