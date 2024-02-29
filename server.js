@@ -14,7 +14,7 @@ const getCurrentDirname = (importMetaUrl) => {
 const __dirname = getCurrentDirname(import.meta.url);
 
 const app = express();
-const PORT = 3000;
+const PORT = 80;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
